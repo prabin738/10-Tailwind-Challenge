@@ -1,5 +1,8 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaRegFileCode } from "react-icons/fa6";
+import { MdLaptopWindows } from "react-icons/md";
+import { FaHandBackFist } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -9,7 +12,7 @@ const Hero = () => {
     >
       <div
         id="hero-container"
-        className="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center"
+        className="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12"
       >
         <div
           id="version-text"
@@ -28,10 +31,25 @@ const Hero = () => {
           </p>
           <FaLongArrowAltRight className="text-yellow-600 group-hover:translate-x-1 transition duration-300" />
         </div>
-        <h1 className="text-4xl font-semibold leading-snug mt-4">
+        <div id="hero-features" className="hidden sm:flex gap-8 my-6">
+          <div className="flex justify-center items-center gap-2 text-gray-500 ">
+            <FaRegFileCode />
+            <p className="flex flex-1">Code Optional</p>
+          </div>
+          <div className="flex justify-center items-center gap-2 text-gray-500 ">
+            <FaHandBackFist />
+            <p className="flex flex-1">Drag and Drop Builder</p>
+          </div>
+          <div className="flex justify-center items-center gap-2 text-gray-500 ">
+            <MdLaptopWindows />
+            <p className="flex flex-1">Windows, MAC, Linux</p>
+          </div>
+        </div>
+
+        <h1 className="text-4xl font-semibold leading-snug mt-4 sm:text-7xl">
           Web app to Desktop App in Minutes
         </h1>
-        <p className="text-xl mt-4">
+        <p className="text-xl mt-4 sm:text-2xl sm:mt-8 sm:leading-normal text-gray-800">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea
           impedit repellat voluptas ratione est accusantium, porro aspernatur at
           magnam adipisci asperiores aut harum commodi, inventore iste, unde

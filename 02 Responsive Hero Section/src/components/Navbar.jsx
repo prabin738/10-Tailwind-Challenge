@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="p-3 flex bg-white justify-between items-center">
-        <a href="#" id="brand" className="flex gap-2 items-center">
+        <a href="#" id="brand" className="flex flex-1 gap-2 items-center">
           <img
             src={logo}
             alt=""
@@ -41,8 +41,8 @@ const Navbar = () => {
             Login
           </a>
         </div>
-        <div className="hidden lg:flex gap-2 ">
-          <button className="hidden gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-indigo-600 md:flex">
+        <div className=" hidden lg:flex justify-end flex-1 ">
+          <button className=" lg:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-indigo-600 md:flex ">
             {" "}
             <IoLogoElectron className="text-xl" />{" "}
             <span> Electron Developers</span>{" "}
